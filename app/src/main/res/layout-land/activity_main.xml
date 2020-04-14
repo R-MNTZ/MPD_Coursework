@@ -1,0 +1,83 @@
+<!--  Ramon Martinez Fernandez S1631216  -->
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+
+
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Click to view Roadworks /Incidents" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salutation"
+            android:layout_marginTop="10dp"
+            android:text="Planned Roadworks"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/startButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton"
+            android:layout_marginTop="10dp"
+            android:text="Current Incidents"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/startButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton2"
+            android:layout_marginTop="10dp"
+            android:text="Roadworks"
+            android:textSize="11sp" />
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton3"
+            android:layout_centerHorizontal="true"
+
+            android:layout_gravity="center"
+            tools:visibility="invisible">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/pBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pbHeaderProgress"
+
+            android:text="Loading Data..."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:text="S1631216"
+            android:textColor="#A9A9A9"
+            app:layout_constraintTop_toBottomOf="@id/pBar" />
+
+
+    </RelativeLayout>
